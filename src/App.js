@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
 
-import ListUsers from './ListUsers'
+import Profiles from './Profiles'
 /*
 Use R eact and the data below to display a list of users alongside their favorite movies.
 
@@ -108,7 +108,11 @@ class App extends Component {
         </header>
         <h2>Favorite Movies</h2>
 		
-		<ListUsers />
+		<Profiles 
+			profiles={profiles} 
+			users={users}	
+			movies={movies}
+		/>
       </div>
     );
   }
